@@ -2,9 +2,19 @@
 
 A fun learning project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte), using [`api.themoviedb.org`](https://api.themoviedb.org)
 
+<img width=100% alt="Movie DB" src="static/screenshot.png">
+
 ## Developing
 
 Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+
+Use npm install to install dependencies:
+
+```bash
+npm install
+```
+
+Start a development server:
 
 ```bash
 npm run dev
