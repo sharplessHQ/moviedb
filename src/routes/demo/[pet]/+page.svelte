@@ -17,16 +17,23 @@
 {#await load}
 	<p>...waiting</p>
 {:then data}
-	<img src={data.message} alt="Dog" />
+	<div class="demo-details">
+		<img src={data.message} alt="Dog" />
 
-	<h1>Number: {count}</h1>
-	<button on:click={incrementBtn}>Increment</button>
+		<h1>Number: {count}</h1>
+		<button on:click={incrementBtn}>Increment</button>
+	</div>
 {:catch error}
 	<!-- <p>An error occurred!</p> -->
 	<Error />
 {/await}
 
 <style>
+	.demo-details {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
 	img {
 		width: 360px;
 	}

@@ -3,6 +3,7 @@
 		<a href="/">Movie Database</a>
 		<a href="/demo/dog">Server Demo</a>
 		<a href="/staging/hamster">Staging Demo</a>
+		<a href="/clock">Clock</a>
 	</div>
 </nav>
 
@@ -25,7 +26,7 @@
 	}
 	.nav-btns {
 		display: grid;
-		grid-template-columns: repeat(3, auto);
+		grid-template-columns: repeat(4, auto);
 		grid-column-gap: 2rem;
 	}
 </style>
