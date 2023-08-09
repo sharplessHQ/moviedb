@@ -2,11 +2,11 @@
 	import { page } from '$app/stores';
 	let currPageFooter = '';
 	page.subscribe((currentPage) => {
-		// console.log(currentPage.params);
+		// console.log(currentPage);
 		currPageFooter =
 			currentPage.params.pet === 'dog'
 				? 'dog.ceo'
-				: currentPage.params.pet === 'hamster'
+				: currentPage.params.pet === 'hamster' || currentPage.route.id === '/clock'
 				? ''
 				: 'api.themoviedb.org/';
 	});

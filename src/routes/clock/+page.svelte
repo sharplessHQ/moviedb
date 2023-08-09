@@ -8,6 +8,6 @@
 
 <style>
 	.clock {
-		margin: 2rem 20%;
+		margin: 2rem 30%;
 	}
 </style>
