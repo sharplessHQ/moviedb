@@ -2,7 +2,8 @@
 
 A fun learning project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte), using [`api.themoviedb.org`](https://api.themoviedb.org)
 
-<img width=100% alt="Movie DB" src="static/screenshot.png">
+<img width=100% alt="Popular Movies" src="static/movies.png">
+<img width=100% alt="Movie Ratings" src="static/rating.png">
 
 ## Developing
 

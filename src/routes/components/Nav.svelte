@@ -1,9 +1,21 @@
+<script>
+	import { page } from '$app/stores';
+	let currPage = '';
+	page.subscribe((currentPage) => {
+		// console.log(currentPage);
+		currPage = currentPage.route.id;
+	});
+</script>
+
 <nav>
 	<div class="nav-btns">
-		<a href="/">Movie Database</a>
-		<a href="/demo/dog">Server Demo</a>
-		<a href="/staging/hamster">Staging Demo</a>
-		<a href="/clock">Clock</a>
+		<a href="/" class={currPage === '/' ? 'currPage' : ''}>Movie Database</a>
+		<a href="/rating" class={currPage === '/rating' ? 'currPage' : ''}>Movie Ratings</a>
+		<a href="/demo/dog" class={currPage.includes('/demo') ? 'currPage' : ''}>Server Demo</a>
+		<a href="/staging/hamster" class={currPage.includes('/staging') ? 'currPage' : ''}
+			>Staging Demo</a
+		>
+		<a href="/clock" class={currPage === '/clock' ? 'currPage' : ''}>Clock</a>
 	</div>
 </nav>
 
@@ -24,9 +36,12 @@
 		padding: 0.5rem 1rem;
 		border-radius: 0.5rem;
 	}
+	.currPage {
+		color: pink;
+	}
 	.nav-btns {
 		display: grid;
-		grid-template-columns: repeat(4, auto);
+		grid-template-columns: repeat(5, auto);
 		grid-column-gap: 2rem;
 	}
 </style>

@@ -1,6 +1,6 @@
 <script>
 	export let data;
-	// console.log(data);
+	// console.log(data?.movies);
 	import Movies from './components/Movies.svelte';
 	import Search from './components/Search.svelte';
 	import { fly } from 'svelte/transition';

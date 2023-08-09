@@ -12,6 +12,8 @@
 				? `Movies: ${currentPage.params.searchId}`
 				: currentPage.route.id.includes('/staging')
 				? 'Hamster Page'
+				: currentPage.route.id === '/rating'
+				? 'Movie Ratings'
 				: 'Dog Page';
 	});
 </script>
